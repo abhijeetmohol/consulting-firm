@@ -1,0 +1,173 @@
+:root{
+    /* colors-variables */
+    --primary-yellow:#f7bc08;
+    --secondary-gray:#E5E5E5;
+
+    /* text-color */
+    --primary-text-header:#f7bc08;
+    --secondary-text-section:#111111;
+    --tershary-text-section:#B3B3B3;
+}
+@font-face {
+    font-family:montserrat ;
+    src: url(../fonts/montserrat-static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family:montserrat ;
+    src: url(../fonts/montserrat-static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family:montserrat ;
+    src: url(../fonts/montserrat-static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family:open-sans ;
+    src: url(../fonts/open-sans-static/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family:open-sans ;
+    src: url(../fonts/open-sans-static/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family:open-sans ;
+    src: url(../fonts/open-sans-static/OpenSans-Regular.ttf);
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: open-sans;
+}
+.box-sizing{
+    box-sizing: border-box;
+}
+.bg-img{
+    background: url("../images/consulting-firm-main-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 0px 100px;
+}
+.firm-name{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: montserrat;
+}
+.btn{
+    background-color: var(--primary-yellow);
+    border: 1px solid var(--primary-yellow);
+}
+.btn:hover{
+    background-color: var(--secondary-gray);
+    border: 1px solid;
+    transition: all 1s ease-in;
+}
+.bg-winning-strategy{
+    background: var(--secondary-gray);
+    padding: 65px 0px;
+}
+.break{
+    display: inline;
+}
+.inner-circle{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--primary-yellow);
+    border-radius: 50%;
+    margin: -30px auto 50px;
+}
+.meeting-section{
+    background: url(../images/meeting-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 600px 0px 100px;
+}
+.card-section{
+    padding:80px 0px 60px;
+    background: var(--primary-yellow);
+}
+.arrow{
+    clip-path: polygon(1% 33%, 63% 32%, 60% 0%, 100% 50%, 60% 100%, 63% 64%, 0 62%);
+    background-color: var(--primary-yellow);
+    height:20px;
+    width: 60px;
+}
+.margin-minus{
+    margin-top:-150px;
+}
+.team-bg{
+    background:url(../images/team-member-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:90px 0px;
+}
+.member-card{
+    text-overflow: ellipsis;
+}
+.member-card:hover{
+    transition: all 1s linear ;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+i{
+    color: var(--primary-text-header);
+    cursor: pointer;
+}
+.stretch-bg{
+    background: url(../images/stretch-girl.png),var(--primary-yellow);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    padding:100px 0px;
+    background-position: right bottom;
+}
+.bg-advise{
+    background: url(../images/advise-image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+.count-container {
+    
+    position: relative;
+    font-size: 26px;
+  }
+  span.num {
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  .contact-us{
+    background: url(../images/contact-us-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+  }
+  form{
+    box-shadow: inset 0px 0px 5px  var(--primary-text-header);
+  }
+  input , textarea{
+    width: 100%;
+    padding:10px 5px;
+    
+    outline:1px;
+  }
+@media only screen and (min-width: 576px)  {
+    .firm-name{
+        font-size: 52px;
+        font-weight: 700;
+    }
+    .break{
+        display: block;
+    }
+    .margin-minus{
+        margin-top:-200px;
+    }
+    .stretch-bg{
+        background: url(../images/stretch-girl.png),var(--primary-yellow);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        padding:100px 0px;
+        background-position: right bottom;
+    }
+}
