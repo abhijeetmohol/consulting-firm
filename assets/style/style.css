@@ -214,17 +214,13 @@ button i {
 
 .slick-slider .slick-next{
     position:absolute;
-    right:0px;
-    top:50%;
+    right:0%;
+    top:0%;
+   
 }
 .slick-slider .slick-prev{
-    position:absolute;
-    left: 0px;
-    top:50%;
-    z-index: 9;
-}
-.slick-slider button{
-    padding:10px 50px;
+    position:static;
+  
 }
 @media only screen and (min-width: 576px) {
     .firm-name {
@@ -246,5 +242,19 @@ button i {
         background-repeat: no-repeat;
         padding: 100px 0px;
         background-position: right bottom;
+    }
+    .slick-slider .slick-next{
+        position:absolute;
+        right:0px;
+        top:50%;
+    }
+    .slick-slider .slick-prev{
+        position:absolute;
+        left: 0px;
+        top:50%;
+        z-index: 9;
+    }
+    .slick-slider button{
+        padding:10px 50px;
     }
 }
