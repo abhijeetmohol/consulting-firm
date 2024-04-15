@@ -1,75 +1,91 @@
-:root{
+:root {
     /* colors-variables */
-    --primary-yellow:#f7bc08;
-    --secondary-gray:#E5E5E5;
+    --primary-yellow: #f7bc08;
+    --secondary-gray: #E5E5E5;
 
     /* text-color */
-    --primary-text-header:#f7bc08;
-    --secondary-text-section:#111111;
-    --tershary-text-section:#B3B3B3;
+    --primary-text-header: #f7bc08;
+    --secondary-text-section: #111111;
+    --tershary-text-section: #B3B3B3;
 }
+
 @font-face {
-    font-family:montserrat ;
+    font-family: montserrat;
     src: url(../fonts/montserrat-static/Montserrat-Bold.ttf);
+
 }
+
 @font-face {
-    font-family:montserrat ;
+    font-family: montserrat;
     src: url(../fonts/montserrat-static/Montserrat-SemiBold.ttf);
 }
+
 @font-face {
-    font-family:montserrat ;
+    font-family: montserrat;
     src: url(../fonts/montserrat-static/Montserrat-Regular.ttf);
 }
+
 @font-face {
-    font-family:open-sans ;
+    font-family: open-sans;
     src: url(../fonts/open-sans-static/OpenSans-Bold.ttf);
 }
+
 @font-face {
-    font-family:open-sans ;
+    font-family: open-sans;
     src: url(../fonts/open-sans-static/OpenSans-SemiBold.ttf);
 }
+
 @font-face {
-    font-family:open-sans ;
+    font-family: open-sans;
     src: url(../fonts/open-sans-static/OpenSans-Regular.ttf);
 }
-*{
-    margin:0px;
+
+* {
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: open-sans;
 }
-.box-sizing{
+
+.box-sizing {
     box-sizing: border-box;
 }
-.bg-img{
+
+.bg-img {
     background: url("../images/consulting-firm-main-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 200px 0px 100px;
 }
-.firm-name{
+
+.firm-name {
     font-size: 32px;
     font-weight: 700;
     font-family: montserrat;
 }
-.btn{
+
+.btn {
     background-color: var(--primary-yellow);
     border: 1px solid var(--primary-yellow);
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--secondary-gray);
     border: 1px solid;
     transition: all 1s ease-in;
 }
-.bg-winning-strategy{
+
+.bg-winning-strategy {
     background: var(--secondary-gray);
     padding: 65px 0px;
 }
-.break{
+
+.break {
     display: inline;
 }
-.inner-circle{
+
+.inner-circle {
     padding: 20px;
     height: 100px;
     width: 100px;
@@ -77,97 +93,158 @@
     border-radius: 50%;
     margin: -30px auto 50px;
 }
-.meeting-section{
+
+.meeting-section {
     background: url(../images/meeting-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 600px 0px 100px;
 }
-.card-section{
-    padding:80px 0px 60px;
+
+.card-section {
+    padding: 80px 0px 60px;
     background: var(--primary-yellow);
 }
-.arrow{
+
+.arrow {
     clip-path: polygon(1% 33%, 63% 32%, 60% 0%, 100% 50%, 60% 100%, 63% 64%, 0 62%);
     background-color: var(--primary-yellow);
-    height:20px;
+    height: 20px;
     width: 60px;
 }
-.margin-minus{
-    margin-top:-150px;
+
+.margin-minus {
+    margin-top: -150px;
 }
-.team-bg{
-    background:url(../images/team-member-bg.jpg);
+
+.team-bg {
+    background: url(../images/team-member-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding:90px 0px;
+    padding: 90px 0px;
 }
-.member-card{
+
+.member-card {
     text-overflow: ellipsis;
 }
-.member-card:hover{
-    transition: all 1s linear ;
+
+.member-card:hover {
+    transition: all 1s linear;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
-i{
+
+i {
     color: var(--primary-text-header);
     cursor: pointer;
 }
-.stretch-bg{
-    background: url(../images/stretch-girl.png),var(--primary-yellow);
+
+.stretch-bg {
+    background: url(../images/stretch-girl.png), var(--primary-yellow);
     background-size: 50% 50%;
     background-repeat: no-repeat;
-    padding:100px 0px;
+    padding: 100px 0px;
     background-position: right bottom;
 }
-.bg-advise{
+
+.bg-advise {
     background: url(../images/advise-image.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 100px 0px;
 }
+
 .count-container {
-    
+
     position: relative;
     font-size: 26px;
-  }
-  span.num {
+}
+
+span.num {
     display: grid;
     place-items: center;
     font-weight: 600;
     font-size: 3em;
-  }
-  .contact-us{
-    background: url(../images/contact-us-bg.png);
+}
+
+.contact-us {
+    background-image:linear-gradient(0deg, rgba(179, 179, 179, 0.301), rgba(179, 179, 179, 0.318)), url(../images/contact-us-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0px;
-  }
-  form{
-    box-shadow: inset 0px 0px 5px  var(--primary-text-header);
-  }
-  input , textarea{
+}
+
+footer form {
+    box-shadow: inset 0px 0px 5px var(--primary-text-header);
+}
+
+input,
+textarea {
     width: 100%;
-    padding:10px 5px;
-    
-    outline:1px;
-  }
-@media only screen and (min-width: 576px)  {
-    .firm-name{
+    padding: 10px 5px;
+
+    outline: 1px;
+}
+
+#scrollToTop {
+    position: fixed;
+    left: 0%;
+    top: 100%;
+    transform: translate(9%, -100%);
+}
+
+#scrollToBottom {
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+}
+
+button i {
+    color: #111111;
+}
+.testimonial-section{
+    background-color: var(--primary-yellow);
+    padding: 135px 0px;
+}
+.customer-img{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+}
+
+.slick-slider .slick-next{
+    position:absolute;
+    right:0px;
+    top:50%;
+}
+.slick-slider .slick-prev{
+    position:absolute;
+    left: 0px;
+    top:50%;
+    z-index: 9;
+}
+.slick-slider button{
+    padding:10px 50px;
+}
+@media only screen and (min-width: 576px) {
+    .firm-name {
         font-size: 52px;
         font-weight: 700;
     }
-    .break{
+
+    .break {
         display: block;
     }
-    .margin-minus{
-        margin-top:-200px;
+
+    .margin-minus {
+        margin-top: -200px;
     }
-    .stretch-bg{
-        background: url(../images/stretch-girl.png),var(--primary-yellow);
+
+    .stretch-bg {
+        background: url(../images/stretch-girl.png), var(--primary-yellow);
         background-size: 50% 100%;
         background-repeat: no-repeat;
-        padding:100px 0px;
+        padding: 100px 0px;
         background-position: right bottom;
     }
 }

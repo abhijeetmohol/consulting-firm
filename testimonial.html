@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn3.iconfinder.com/data/icons/business-round-set-1/128/CONSULTING-64.png">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!--slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--slider-end-->
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary   p3-4 ">
+          <div class="container ">
+            <a class="navbar-brand" href="index.html">
+              <h1><i class="fa-brands fa-slack"></i></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html" onclick="">services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="testimonial.html">testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="about-us.html">about us</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Enter user id" aria-label="Search">
+                <button class="btn" type="submit">login</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div class="testimonial">
+        
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7 p-5 bg-white rounded-4 d-flex align-items-center">
+                        <div>
+                            <img src="./assets/images/image-1.png" class="customer-img">
+                        </div>
+                        <div class="customer-review ms-4">
+                            <h1 class="fw-bold">ALEX MARTON</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ratione est, dolorum tenetur provident consequuntur at sed amet ducimus magnam, modi cumque praesentium aperiam, soluta ipsum.</p>
+                            <h3 class="fw-bold " >Thank You</h3>
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7 p-5 bg-white rounded-4 d-flex align-items-center">
+                        <div>
+                            <img src="./assets/images/image-2.png" class="customer-img">
+                        </div>
+                        <div class="customer-review ms-4">
+                            <h1 class="fw-bold">LINDA LARSON</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ratione est, dolorum tenetur provident consequuntur at sed amet ducimus magnam, modi cumque praesentium aperiam, soluta ipsum.</p>
+                            <h3 class="fw-bold " >Thank You</h3>
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7 p-5 bg-white rounded-4 d-flex align-items-center">
+                        <div>
+                            <img src="./assets/images/image_3.jpg" class="customer-img">
+                        </div>
+                        <div class="customer-review ms-4">
+                            <h1 class="fw-bold">JIMMY CARTOON</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ratione est, dolorum tenetur provident consequuntur at sed amet ducimus magnam, modi cumque praesentium aperiam, soluta ipsum.</p>
+                            <h3 class="fw-bold " >Thank You</h3>
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+				$('.testimonial').slick({
+					// setting-name: setting-value
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1, 
+					autoplay: true,
+					autoplaySpeed: 500,
+					
+				});
+			});
+    </script>
+</body>
+
+</html>
